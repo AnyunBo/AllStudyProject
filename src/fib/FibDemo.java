@@ -41,4 +41,23 @@ public class FibDemo {
 		return secondNum;
 	}
 
+	/**
+	 * 求斐波那契数
+	 * 
+	 * @param num 位置
+	 * @return 斐波那契数
+	 */
+	public static long fib3(int num) {
+		if (num <= 1) {
+			return num;
+		}
+		long firstNum = 0;
+		long secondNum = 1;
+		for (int i = 0; i < num - 1; i++) {
+			secondNum = firstNum + secondNum;
+			firstNum = secondNum - firstNum;
+		}
+		return secondNum;
+	}
+
 }

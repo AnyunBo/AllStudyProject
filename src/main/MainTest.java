@@ -11,12 +11,15 @@ public class MainTest {
 	}
 
 	public static void testFib() {
-		int num = 46;
+		int num = 60;
 
-		System.out.println(FibDemo.fib1(num));
+		//System.out.println(FibDemo.fib1(num));
 
 		System.out.println(FibDemo.fib2(num));
 
+		
+		System.out.println(FibDemo.fib3(num));
+		
 	}
 
 }
